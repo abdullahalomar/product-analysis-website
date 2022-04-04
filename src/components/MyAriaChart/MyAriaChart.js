@@ -3,55 +3,50 @@ import { AreaChart, Area, XAxis, YAxis, Tooltip, Legend } from 'recharts';
 
 const MyAriaChart = () => {
     const data = [
-        {
-          name: 'Jan',
-          uv: 4000,
-          pv: 2400,
-          amt: 2400,
-        },
-        {
-          name: 'Feb',
-          uv: 3000,
-          pv: 1398,
-          amt: 2210,
-        },
-        {
-          name: 'Mar',
-          uv: 2000,
-          pv: 9800,
-          amt: 2290,
-        },
-        {
-          name: 'Apr',
-          uv: 2780,
-          pv: 3908,
-          amt: 2000,
-        },
-        {
-          name: 'May',
-          uv: 1890,
-          pv: 4800,
-          amt: 2181,
-        },
-        {
-          name: 'Jun',
-          uv: 2390,
-          pv: 3800,
-          amt: 2500,
-        },
-        {
-          name: 'Jul',
-          uv: 3490,
-          pv: 4300,
-          amt: 2100,
-        },
-      ];
+      {
+          "month": "Mar",
+          "investment": 100000,
+          "sell": 241,
+          "revenue": 10401
+      },
+      {
+          "month": "Apr",
+          "investment": 200000,
+          "sell": 423,
+          "revenue": 24500
+      },
+      {
+          "month": "May",
+          "investment": 500000,
+          "sell": 726,
+          "revenue": 67010
+      },
+      {
+          "month": "Jun",
+          "investment": 500000,
+          "sell": 529,
+          "revenue": 40405
+      },
+      {
+          "month": "Jul",
+          "investment": 600000,
+          "sell": 601,
+          "revenue": 50900
+      },
+      {
+          "month": "Aug",
+          "investment": 700000,
+          "sell": 670,
+          "revenue": 61000
+      }
+  ]
     return (
         <div>
             <h3>Investment vs Revenue</h3>
              <AreaChart width={500} height={500} data={data}>
-            <Area dataKey={'pv'}></Area>
-            <XAxis dataKey={'name'}></XAxis>
+            <Area dataKey={'investment'}></Area>
+            <Area dataKey={'revenue'}></Area>
+            <XAxis dataKey={'month'}></XAxis>
             <YAxis></YAxis>
             <Tooltip></Tooltip>
             <Legend></Legend>

@@ -10,7 +10,7 @@ const MainContent = () => {
         <div>
             <section className='main-content'>
             <div className='main-cont-text'>
-                <h1><span className='color-text'>La</span>ptop<span className='color-text'>S</span>tore</h1>
+                <h1><span className='color-text'>La</span>ptop <span className='color-text'>S</span>tore</h1>
                 <articl className='article'>Choosing A Laptop Computer That's Right For You 
                     Shouldn't Be Difficult. <br /> Whether You're A Gamer, A Designer, A Student, Or 
                     Simply Need A Laptop <br />For Everyday Tasks And Browsing, TechLand BD Makes It 
