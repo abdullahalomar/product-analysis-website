@@ -4,6 +4,7 @@ import img from './laptop.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStreetView } from '@fortawesome/free-solid-svg-icons';
 
+
 const MainContent = () => {
     return (
         <div>
