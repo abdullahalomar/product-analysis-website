@@ -1,10 +1,13 @@
 import React from 'react';
 import './MainContent.css';
 import img from './laptop.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStreetView } from '@fortawesome/free-solid-svg-icons';
 
 const MainContent = () => {
     return (
-        <div className='main-content'>
+        <div>
+            <section className='main-content'>
             <div className='main-cont-text'>
                 <h1><span className='color-text'>La</span>ptop<span className='color-text'>S</span>tore</h1>
                 <articl className='article'>Choosing A Laptop Computer That's Right For You 
@@ -16,7 +19,16 @@ const MainContent = () => {
             <div className='main-cont-img'>
                 <img src={img} alt="" />
             </div>
+            </section>
+
+            {/* customar reviews */}
+
+            <section className='reviews'>
+                <h1 className='reviews-text'>Customar Reviews <FontAwesomeIcon icon={faStreetView}></FontAwesomeIcon></h1>
+                <button>See All Reviews</button>
+            </section>
         </div>
+        
     );
 };
 

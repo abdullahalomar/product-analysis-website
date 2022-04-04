@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRotateBack } from '@fortawesome/free-solid-svg-icons'
+import { faRotateBack } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import Home from '../Home/Home';
 import './NotFound.css'
