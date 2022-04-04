@@ -4,7 +4,7 @@ import Review from '../Review/Review';
 import './Reviews.css';
 
 const Reviews = () => {
-    const [reviews, setReviews] = useReviews();
+    const [reviews, setReviews] = useReviews(6);
     return (
         <div className='reviews-cont'>
             <div className='review-container'>

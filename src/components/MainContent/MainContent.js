@@ -3,9 +3,12 @@ import './MainContent.css';
 import img from './laptop.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStreetView } from '@fortawesome/free-solid-svg-icons';
+import useReviews from '../../hooks/useReviews';
+import Review from '../Review/Review';
 
 
 const MainContent = () => {
+    const [reviews, setReviews] = useReviews(3);
     return (
         <div>
             <section className='main-content'>
@@ -26,6 +29,12 @@ const MainContent = () => {
 
             <section className='reviews'>
                 <h1 className='reviews-text'>Customar Reviews <FontAwesomeIcon icon={faStreetView}></FontAwesomeIcon></h1>
+                {
+                    reviews.map(review => <Review
+                        key={review._id}
+                        review = {review}
+                    ></Review>)
+                }
                 <button>See All Reviews</button>
             </section>
         </div>
