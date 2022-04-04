@@ -1,4 +1,5 @@
 # Laptop Store
+# Live Site: https://react-laptop-store-project.netlify.app/
 
 1. Navigation has been created and 5 route links have been created there.
 
