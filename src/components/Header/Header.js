@@ -1,5 +1,6 @@
 import React from 'react';
 import CustomLink from '../CustomLink/CustomLink';
+import MainContent from '../MainContent/MainContent';
 import './Header.css'
 
 const Header = () => {
@@ -12,6 +13,9 @@ const Header = () => {
                 <CustomLink to="/blogs">Blogs</CustomLink>
                 <CustomLink to="/about">About</CustomLink>
             </nav>
+            <div>
+            <MainContent></MainContent>
+            </div>
         </div>
     );
 };

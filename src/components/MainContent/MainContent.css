@@ -1,0 +1,15 @@
+.main-content{
+    display: flex;
+    justify-content: space-around;
+}
+.color-text{
+    color: blueviolet;
+}
+.main-cont-text{
+    margin-top: 10%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+.article{
+    font-size: 17px;
+}
