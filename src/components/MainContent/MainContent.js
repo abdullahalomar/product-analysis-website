@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStreetView } from '@fortawesome/free-solid-svg-icons';
 import useReviews from '../../hooks/useReviews';
 import Review from '../Review/Review';
+import { Link } from 'react-router-dom';
 
 
 const MainContent = () => {
@@ -28,17 +29,20 @@ const MainContent = () => {
             {/* customar reviews */}
 
             <section className='reviews'>
-                <h1 className='reviews-text'>Customar Reviews <FontAwesomeIcon icon={faStreetView}></FontAwesomeIcon></h1>
-                {
+                <h1 className='reviews-text'>Customar Reviews <FontAwesomeIcon icon={faStreetView}></FontAwesomeIcon> ({reviews.length})</h1>
+                <div className='review-container'>
+                    {
                     reviews.map(review => <Review
                         key={review._id}
                         review = {review}
                     ></Review>)
-                }
-                <button>See All Reviews</button>
+                    }
+                </div>
+                <div className='link-see-all'>
+                <Link to='/reviews'>See All Reviews<FontAwesomeIcon icon={faStreetView}></FontAwesomeIcon></Link>
+                </div>
             </section>
         </div>
-        
     );
 };
 

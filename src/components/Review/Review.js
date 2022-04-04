@@ -7,9 +7,9 @@ const Review = (props) => {
     return (
         <div className='review-detl'>
             <img src={picture} alt="" />
-            <h4>Name: {name}</h4>
-            <h5>Description: {desc}</h5>
-            <p>Ratting: { ratting }</p>
+            <h3>{name}</h3>
+            <h5>{desc}</h5>
+            <h4>Ratting: {ratting} </h4>
         </div>
     );
 };
